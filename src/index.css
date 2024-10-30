@@ -6,3 +6,6 @@
     background-color: #212121;
     color:white
 }
+#tasklist::-webkit-scrollbar{
+    display: none;
+}
