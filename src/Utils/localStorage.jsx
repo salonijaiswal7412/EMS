@@ -8,7 +8,7 @@ const employees = [
           title: "Complete Project Report",
           description: "Finalize the project report for Q3.",
           date: "2024-11-01",
-          category: "Documentation",
+           category: "Documentation",
           active: true,
           newTask: false,
           completed: false,
@@ -221,9 +221,10 @@ export const setLocalStorage=()=>{
 }
 
 export const getLocalStorage=()=>{
-   const employeesData= JSON.parse(localStorage.getItem('employees'));
-   const adminsData=JSON.parse(localStorage.getItem('admins'));
-   console.log(employeesData,adminsData);
+   const employee= JSON.parse(localStorage.getItem('employees'));
+   const admin=JSON.parse(localStorage.getItem('admins'));
+   console.log(employee,admin);
+   return{employee,admin};
    
    
     
