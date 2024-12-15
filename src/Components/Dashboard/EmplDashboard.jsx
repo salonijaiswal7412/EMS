@@ -3,13 +3,14 @@ import Header from '../Others/Header'
 import TaskListNum from '../Others/TaskListNum'
 import TaskList from '../TaskList/TaskList'
 
-function EmplDashboard() {
+function EmplDashboard({data}) {
+  
   return (
     <div className='p-12 h-screen'>
       <div className=''>
-        <Header/>
-        <TaskListNum/>
-        <TaskList/>
+        <Header data={data}/>
+        <TaskListNum data={data}/>
+        <TaskList data={data}/>
 
       </div>
 
